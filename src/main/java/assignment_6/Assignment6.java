@@ -40,7 +40,7 @@ public class Assignment6
 		signIn.click();
 		
 		WebElement emailId = driver.findElement(By.xpath("//input[@id='email_create']"));
-		emailId.sendKeys("himanshukhare1994@gmail.com");
+		emailId.sendKeys("himanshukhare1995@gmail.com");
 				
 		WebElement createAccount = driver.findElement(By.xpath("//i[@class='icon-user left']"));
 		createAccount.click();
@@ -57,7 +57,7 @@ public class Assignment6
 		WebElement lname = driver.findElement(By.xpath("//input[@id='customer_lastname']"));
 		lname.sendKeys("Khare");
 		
-		WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
+		//WebElement email = driver.findElement(By.xpath("//input[@id='email']"));
 		
 		WebElement password = driver.findElement(By.xpath("//input[@id='passwd']"));
 		password.sendKeys(")(*&^%$#@!");
@@ -72,7 +72,8 @@ public class Assignment6
 		WebElement months = driver.findElement(By.id("months"));
 		act.moveToElement(months).click().build().perform();
 		Select month = new Select(months);
-		month.selectByValue("7");
+		//month.selectByValue("7");
+		month.selectByVisibleText("July");
 		
 		WebElement years = driver.findElement(By.id("years"));
 		act.moveToElement(years).click().build().perform();
