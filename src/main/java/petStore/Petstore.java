@@ -59,7 +59,7 @@ public class Petstore
 		String currentDateTime = dateFormat.format(date);
 		
 		try {
-			FileUtils.copyFile(file, new File("./screenshots/"+currentDateTime+".png"));
+			FileUtils.copyFile(file, new File("./screenshots/"+ currentDateTime+".png"));
 			System.out.println("Screenshot taken !!!"+currentDateTime);
 		   } 
 		catch (IOException e) 
